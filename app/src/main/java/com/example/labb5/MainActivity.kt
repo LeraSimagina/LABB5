@@ -1,5 +1,6 @@
 package com.example.labb5
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val totalAmount = amount * (1 + totalInterest)
+
             val intent = Intent(this, ResultActivity::class.java).apply {
                 putExtra("TOTAL_AMOUNT", totalAmount)
             }
