@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAE1E5"
     tools:context=".ResultActivity">
 
     <TextView
@@ -13,7 +14,10 @@
         android:layout_height="97dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="235dp"
+        android:fontFamily="sans-serif-medium"
         android:text="TextView"
+        android:textColor="#800530"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

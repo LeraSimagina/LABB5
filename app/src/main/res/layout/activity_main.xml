@@ -5,21 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAE1E5"
     tools:context=".MainActivity">
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="208dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="185dp"
         android:layout_marginBottom="80dp"
+        android:drawableTint="#800530"
+        android:fontFamily="sans-serif-medium"
+        android:foregroundTint="#800530"
         android:text="1 год (9%)"
+        android:textColor="#800530"
+        android:textSize="16sp"
+        android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
@@ -29,35 +35,28 @@
         android:layout_marginTop="444dp"
         android:layout_marginEnd="146dp"
         android:layout_marginBottom="236dp"
-        android:text="Button"
+        android:backgroundTint="#D01F5B"
+        android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="255dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="335dp"
-        android:ems="10"
-        android:hint="Сумма вклада"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="92dp"
+        android:drawableTint="#800530"
+        android:fontFamily="sans-serif-medium"
+        android:foregroundTint="#800530"
         android:text="3 месяца (3%)"
+        android:textColor="#800530"
+        android:textSize="16sp"
+        android:typeface="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
@@ -65,9 +64,43 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="24dp"
+        android:drawableTint="#800530"
+        android:fontFamily="sans-serif-medium"
+        android:foregroundTint="#800530"
         android:text="6 месяцев (5%)"
+        android:textColor="#800530"
+        android:textSize="16sp"
+        android:typeface="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="264dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Сумма вклада"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="68dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="104dp"
+        android:drawableTint="#800530"
+        android:fontFamily="sans-serif-medium"
+        android:foregroundTint="#800530"
+        android:text="Срок"
+        android:textColor="#800530"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

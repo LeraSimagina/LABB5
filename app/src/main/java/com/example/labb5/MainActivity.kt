@@ -68,7 +68,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ResultActivity::class.java).apply {
                 putExtra("TOTAL_AMOUNT", totalAmount)
             }
-            startActivity(intent)
+            startActivity (intent)
+
         }
     }
 }
